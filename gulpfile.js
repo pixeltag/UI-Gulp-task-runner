@@ -109,8 +109,8 @@ function image() {
 
 function font() {
   return gulp
-    .src("./src/fonts")
-    .pipe(gulp.dest("./build"))
+    .src("src/fonts/**/*")
+    .pipe(gulp.dest("./build/fonts"))
     .pipe(
       debug({
         title: "Fonts",

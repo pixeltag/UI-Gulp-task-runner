@@ -1,3 +1,8 @@
+@import './bootstrap/_bootstrap.scss';
+@import './_vars.scss';
+@import './_header.scss';
+@import './fonts';
+
 body {
-    background-color: #000;
+    font-family: 'FF Shamel Family Sans One Book', Verdana, Geneva, Tahoma, sans-serif;
 }
