@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta
+      name="author"
+      content="Mark Otto, Jacob Thornton, and Bootstrap contributors"
+    />
+    <meta name="generator" content="Jekyll v3.8.5" />
+    <title>Etimad - Electronic Financial Services Platform</title>
+    <link rel="manifest" href="./assets/manifest.json" />
+
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="application-name" content="Etimad" />
+    <meta name="apple-mobile-web-app-title" content="Etimad" />
+    <meta name="theme-color" content="#08594d" />
+    <meta name="msapplication-navbutton-color" content="#08594d" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+    <meta name="msapplication-starturl" content="" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="stylesheet" id="styleLink" href="./css/main.css" />
+    <link
+      rel="stylesheet"
+      id="styleLink"
+      href="./css/bootstrap/bootstrap.css"
+    />
+  </head>
+  <body>
+    <!-- start header section -->
+    <ncgr-header>
+      <div slot="userprofile" class="d-none commercial-user-details">
+        <div class="align-items-start d-flex flex-column px-4 py-2">
+          <h5 class="text-secondary-blue font-weight-bold">
+            Hatem Sabry Abdelghany baldam
+          </h5>
+        </div>
+        <div class="mx-4 trad-history py-1">
+          <h5 class="text-14">
+            VendorName / SelectedCRName / SelectedAgencyName / SectorName
+          </h5>
+          <p class="my-3 text-14 text-secondary-light-gray">
+            VendorId / SelectedCR / SelectedAgencyCode
+          </p>
+          <!--      <h5 class="text-14">VendorName</h5>-->
+          <!--      <p class="my-3 text-14 text-secondary-light-gray">VendorId</p>-->
+          <a class="btn btn-sm" href="ChangeCRUrl//ChangeAgencyUrl">
+            <!--<span class="btn-text text-12 font-weight-bold">  تغيير السجل التجاري /تغيير الجهة </span>-->
+            <span class="btn-text text-12 font-weight-bold">تغيير الجهة</span>
+          </a>
+        </div>
+        <div class="dropdown-divider mx-4"></div>
+        <a
+          class="dropdown-item py-2 text-14 text-secondary-gray"
+          href="/Account/ChangePassword"
+          >تغيير كلمة المرور</a
+        >
+        <div class="dropdown-divider mx-4"></div>
+        <a
+          href="/Account/Logout"
+          class="btn arrow-btn btn-outline-light btn-md mx-4 my-2"
+        >
+          <span class="btn-text">تسجيل الخروج</span>
+        </a>
+      </div>
+    </ncgr-header>
+    <!--<ncgr-header assets-url="https://10.14.9.35:8088/v2.1/"></ncgr-header>-->
+    <!-- End header section -->
+    <script>
+      const headerData = {
+        Permission: [
+          "ادارة الميزانية,http://10.14.8.61:8064/LandingPage/indexBudget,Etimad.png,4,",
+          "إدارة العقود,http://10.14.8.61:8064/LandingPage/indexContracts,Etimad.png,4,",
+          "إدارة المدفوعات,http://10.14.8.61:8064/LandingPage/indexPaymentOrder,Etimad.png,4,",
+          "إدارة الحقوق المالية للموظفين,http://10.14.8.61:8064/LandingPage/indexPayrollPaymentOrder,Etimad.png,4,",
+          "تخصيص البنود و المشاريع,http://10.14.8.61:8064/LandingPage/indexAgencyBudget,Etimad.png,4,",
+          "حصر المطالبات,http://10.14.8.61:8064/LandingPage/indexClaimsGathering,Etimad.png,4,",
+          "إدارة المستفيدين,http://10.14.8.61:8064/LandingPage/indexVendors,Etimad.png,4,",
+          "الامانات,http://10.14.8.61:8064/LandingPage/indexTrustFund,Etimad.png,4,",
+          "الاستبعاد من الايراد,http://10.14.8.61:8064/LandingPage/indexExcludedRevenue,Etimad.png,4,",
+          "مدفوعات أخرى,http://10.14.8.61:8064/LandingPage/indexOtherPaymentOrders,Etimad.png,4,",
+          "العهد و السلف و التسويات,http://10.14.8.61:8064/LandingPage/indexPettyCash,Etimad.png,4,",
+          "تغذيات الصناديق,http://10.14.8.61:8064/LandingPage/indexFundsFeeds,Etimad.png,4,",
+          "عقارات اعتماد,https://10.13.86.5:9020/,Agency.png,2,",
+          "ادارة الايرادات العامة,#,Agency.png,2,",
+        ],
+        Links: [
+          {
+            name: "عن اعتماد",
+            url: "#",
+          },
+          {
+            name: "اعتماد حكومة",
+            url: "https://etimad.sa/LandingPage/budgetAnnouncementService",
+            children: [
+              {
+                name: "الميزانية",
+                url: "https://etimad.sa/LandingPage/budgetAnnouncementService",
+                children: [
+                  {
+                    name: "تبليغ الميزانية",
+                    url: "https://etimad.sa/LandingPage/budgetAnnouncementService",
+                  },
+                  {
+                    name: "إدارة الميزانية",
+                    url: "https://etimad.sa/LandingPage/displayModel",
+                  },
+                  {
+                    name: "خطة الميزانية",
+                    url: "https://etimad.sa/LandingPage/budgetPlanModal",
+                  },
+                  {
+                    name: "التسليم الإلكتروني لخطة الميزانية",
+                    url: "https://etimad.sa/LandingPage/budgetDetailsModal",
+                  },
+                ],
+              },
+            ],
+          },
+        ],
+        Notification: [
+          {
+            Id: 881,
+            Title: "Culpa nulla velit ad ad nisi do voluptate.",
+            Text: "Enim ex nostrud do nostrud dolore commodo culpa cupidatat. Magna do ad commodo anim incididunt minim veniam nisi ex esse ut. Proident eiusmod sint anim esse nulla voluptate irure. Dolore ea ex ipsum ipsum magna ad ipsum qui irure qui sit. Officia tempor aliqua irure irure ex id labore quis est exercitation velit.",
+            IsEqrar: true,
+          },
+          {
+            Id: 811,
+            Title:
+              "Dolore aliqua ex cillum laborum commodo voluptate do Lorem ea aliqua.",
+            Text: "Magna nostrud ipsum veniam id sit amet. Labore laborum adipisicing sunt Lorem Lorem quis velit commodo nulla occaecat cillum exercitation aliqua. Commodo veniam nisi excepteur minim elit. Ex laborum nostrud cillum anim aliqua laborum. Tempor veniam pariatur velit qui commodo. Sit ex nisi fugiat nisi magna pariatur ut pariatur culpa amet. Esse anim adipisicing velit cillum quis.",
+            IsEqrar: true,
+          },
+          {
+            Id: 114,
+            Title:
+              "Irure dolore incididunt nisi amet sit laborum reprehenderit ea irure.",
+            Text: "In eu ad sunt magna ullamco amet sint culpa fugiat commodo enim et. Deserunt Lorem mollit ad laborum. Qui minim dolor mollit adipisicing mollit Lorem.",
+            IsEqrar: true,
+          },
+          {
+            Id: 287,
+            Title:
+              "Pariatur esse ea culpa nisi reprehenderit consectetur exercitation velit do enim.",
+            Text: "Amet sit excepteur consequat occaecat reprehenderit veniam nulla minim proident tempor consectetur ad reprehenderit. Consequat cupidatat minim dolor officia ex voluptate nostrud cupidatat aute. Reprehenderit pariatur labore minim est quis labore magna consequat magna dolore nostrud esse. Ad ea labore ullamco ea consequat eiusmod. Dolor nostrud aliqua in do deserunt excepteur et dolor irure enim tempor minim.",
+            IsEqrar: true,
+          },
+        ],
+        EtimadCategory: 0,
+        discoverMoreUrl: "discover/more",
+      };
+      let headerComponent = document.querySelector("ncgr-header");
+      headerComponent.data = headerData;
+    </script>
+  </body>
+</html>

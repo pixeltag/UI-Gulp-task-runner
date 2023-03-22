@@ -1,0 +1,1044 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta
+      name="author"
+      content="Mark Otto, Jacob Thornton, and Bootstrap contributors"
+    />
+    <meta name="generator" content="Jekyll v3.8.5" />
+    <title>Etimad - Electronic Financial Services Platform</title>
+    <link rel="manifest" href="./assets/manifest.json" />
+
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="application-name" content="Etimad" />
+    <meta name="apple-mobile-web-app-title" content="Etimad" />
+    <meta name="theme-color" content="#08594d" />
+    <meta name="msapplication-navbutton-color" content="#08594d" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+    <meta name="msapplication-starturl" content="" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="stylesheet" id="styleLink" href="./css/main.min.css" />
+    <link
+      rel="stylesheet"
+      id="styleLink"
+      href="./css/bootstrap/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <!-- start header section -->
+    <ncgr-header>
+      <div slot="userprofile" class="d-none commercial-user-details">
+        <div class="align-items-start d-flex flex-column px-4 py-2">
+          <h5 class="text-secondary-blue font-weight-bold">
+            Hatem Sabry Abdelghany baldam
+          </h5>
+        </div>
+        <div class="mx-4 trad-history py-1">
+          <h5 class="text-14">
+            VendorName / SelectedCRName / SelectedAgencyName / SectorName
+          </h5>
+          <p class="my-3 text-14 text-secondary-light-gray">
+            VendorId / SelectedCR / SelectedAgencyCode
+          </p>
+          <!--      <h5 class="text-14">VendorName</h5>-->
+          <!--      <p class="my-3 text-14 text-secondary-light-gray">VendorId</p>-->
+          <a class="btn btn-sm" href="ChangeCRUrl//ChangeAgencyUrl">
+            <!--<span class="btn-text text-12 font-weight-bold">  تغيير السجل التجاري /تغيير الجهة </span>-->
+            <span class="btn-text text-12 font-weight-bold">تغيير الجهة</span>
+          </a>
+        </div>
+        <div class="dropdown-divider mx-4"></div>
+        <a
+          class="dropdown-item py-2 text-14 text-secondary-gray"
+          href="/Account/ChangePassword"
+          >تغيير كلمة المرور</a
+        >
+        <div class="dropdown-divider mx-4"></div>
+        <a
+          href="/Account/Logout"
+          class="btn arrow-btn btn-outline-light btn-md mx-4 my-2"
+        >
+          <span class="btn-text">تسجيل الخروج</span>
+        </a>
+      </div>
+    </ncgr-header>
+    <!--<ncgr-header assets-url="https://10.14.9.35:8088/v2.1/"></ncgr-header>-->
+    <!-- End header section -->
+    <script>
+      const headerData = {
+        Permission: [
+          "ادارة الميزانية,http://10.14.8.61:8064/LandingPage/indexBudget,Etimad.png,4,",
+          "إدارة العقود,http://10.14.8.61:8064/LandingPage/indexContracts,Etimad.png,4,",
+          "إدارة المدفوعات,http://10.14.8.61:8064/LandingPage/indexPaymentOrder,Etimad.png,4,",
+          "إدارة الحقوق المالية للموظفين,http://10.14.8.61:8064/LandingPage/indexPayrollPaymentOrder,Etimad.png,4,",
+          "تخصيص البنود و المشاريع,http://10.14.8.61:8064/LandingPage/indexAgencyBudget,Etimad.png,4,",
+          "حصر المطالبات,http://10.14.8.61:8064/LandingPage/indexClaimsGathering,Etimad.png,4,",
+          "إدارة المستفيدين,http://10.14.8.61:8064/LandingPage/indexVendors,Etimad.png,4,",
+          "الامانات,http://10.14.8.61:8064/LandingPage/indexTrustFund,Etimad.png,4,",
+          "الاستبعاد من الايراد,http://10.14.8.61:8064/LandingPage/indexExcludedRevenue,Etimad.png,4,",
+          "مدفوعات أخرى,http://10.14.8.61:8064/LandingPage/indexOtherPaymentOrders,Etimad.png,4,",
+          "العهد و السلف و التسويات,http://10.14.8.61:8064/LandingPage/indexPettyCash,Etimad.png,4,",
+          "تغذيات الصناديق,http://10.14.8.61:8064/LandingPage/indexFundsFeeds,Etimad.png,4,",
+          "عقارات اعتماد,https://10.13.86.5:9020/,Agency.png,2,",
+          "ادارة الايرادات العامة,#,Agency.png,2,",
+        ],
+        Links: [
+          {
+            name: "عن اعتماد",
+            url: "#",
+          },
+          {
+            name: "اعتماد حكومة",
+            url: "https://etimad.sa/LandingPage/budgetAnnouncementService",
+            children: [
+              {
+                name: "الميزانية",
+                url: "https://etimad.sa/LandingPage/budgetAnnouncementService",
+                children: [
+                  {
+                    name: "تبليغ الميزانية",
+                    url: "https://etimad.sa/LandingPage/budgetAnnouncementService",
+                  },
+                  {
+                    name: "إدارة الميزانية",
+                    url: "https://etimad.sa/LandingPage/displayModel",
+                  },
+                  {
+                    name: "خطة الميزانية",
+                    url: "https://etimad.sa/LandingPage/budgetPlanModal",
+                  },
+                  {
+                    name: "التسليم الإلكتروني لخطة الميزانية",
+                    url: "https://etimad.sa/LandingPage/budgetDetailsModal",
+                  },
+                ],
+              },
+            ],
+          },
+        ],
+        Notification: [
+          {
+            Id: 881,
+            Title: "Culpa nulla velit ad ad nisi do voluptate.",
+            Text: "Enim ex nostrud do nostrud dolore commodo culpa cupidatat. Magna do ad commodo anim incididunt minim veniam nisi ex esse ut. Proident eiusmod sint anim esse nulla voluptate irure. Dolore ea ex ipsum ipsum magna ad ipsum qui irure qui sit. Officia tempor aliqua irure irure ex id labore quis est exercitation velit.",
+            IsEqrar: true,
+          },
+          {
+            Id: 811,
+            Title:
+              "Dolore aliqua ex cillum laborum commodo voluptate do Lorem ea aliqua.",
+            Text: "Magna nostrud ipsum veniam id sit amet. Labore laborum adipisicing sunt Lorem Lorem quis velit commodo nulla occaecat cillum exercitation aliqua. Commodo veniam nisi excepteur minim elit. Ex laborum nostrud cillum anim aliqua laborum. Tempor veniam pariatur velit qui commodo. Sit ex nisi fugiat nisi magna pariatur ut pariatur culpa amet. Esse anim adipisicing velit cillum quis.",
+            IsEqrar: true,
+          },
+          {
+            Id: 114,
+            Title:
+              "Irure dolore incididunt nisi amet sit laborum reprehenderit ea irure.",
+            Text: "In eu ad sunt magna ullamco amet sint culpa fugiat commodo enim et. Deserunt Lorem mollit ad laborum. Qui minim dolor mollit adipisicing mollit Lorem.",
+            IsEqrar: true,
+          },
+          {
+            Id: 287,
+            Title:
+              "Pariatur esse ea culpa nisi reprehenderit consectetur exercitation velit do enim.",
+            Text: "Amet sit excepteur consequat occaecat reprehenderit veniam nulla minim proident tempor consectetur ad reprehenderit. Consequat cupidatat minim dolor officia ex voluptate nostrud cupidatat aute. Reprehenderit pariatur labore minim est quis labore magna consequat magna dolore nostrud esse. Ad ea labore ullamco ea consequat eiusmod. Dolor nostrud aliqua in do deserunt excepteur et dolor irure enim tempor minim.",
+            IsEqrar: true,
+          },
+        ],
+        EtimadCategory: 0,
+        discoverMoreUrl: "discover/more",
+      };
+      let headerComponent = document.querySelector("ncgr-header");
+      headerComponent.data = headerData;
+    </script>
+  </body>
+</html>
+
+
+<main>
+  <div class="container pt-5">
+    <div class="row mb-5">
+      <div class="col-12 col-md-4 mb-3">
+        <button class="btn btn-primary-light btn-lg">Details</button>
+        <button class="btn btn-primary-light btn-lg">تفاصيل</button>
+      </div>
+      <div class="col-12 col-md-4 mb-3">
+        <button class="btn btn-primary-light">Details</button>
+        <button class="btn btn-primary-light">تفاصيل</button>
+      </div>
+      <div class="col-12 col-md-4 mb-3">
+        <button class="btn btn-primary-light btn-sm">Details</button>
+        <button class="btn btn-primary-light btn-sm">تفاصيل</button>
+      </div>
+    </div>
+
+    <div class="row mb-5">
+      <div class="col-12 col-md-4 mb-3">
+        <button class="btn btn-primary-light">Normal</button>
+        <button class="btn btn-primary-light">عادي</button>
+      </div>
+      <div class="col-12 col-md-4 mb-3">
+        <button class="btn btn-primary-light" disabled>Disabled</button>
+        <button class="btn btn-primary-light" disabled>غير مفعل</button>
+      </div>
+      <div class="col-12 col-md-4 mb-3">
+        <button class="btn btn-outline-primary-light">Details</button>
+        <button class="btn btn-outline-primary-light">تفاصيل</button>
+      </div>
+    </div>
+
+    <div class="row mb-5">
+      <div class="col-12 col-md-3 mb-3">
+        <button class="btn arrow-btn btn-primary-light btn-lg">
+          <span class="btn-text">details</span>
+          <span class="v-divider"></span>
+          <span class="icon icon-arrow-left"></span>
+        </button>
+      </div>
+
+      <div class="col-12 col-md-3 mb-3">
+        <button class="btn arrow-btn btn-primary-light btn-md">
+          <span class="btn-text">details</span>
+          <span class="v-divider"></span>
+          <span class="icon icon-arrow-left"></span>
+        </button>
+      </div>
+
+      <div class="col-12 col-md-3 mb-3">
+        <button class="btn arrow-btn btn-primary-light btn-md">
+          <span class="btn-text">details</span>
+          <span class="v-divider"></span>
+          <span class="icon icon-arrow-left"></span>
+        </button>
+      </div>
+
+      <div class="col-12 col-md-3 mb-3">
+        <button class="btn arrow-btn btn-primary-light btn-sm">
+          <span class="btn-text">details</span>
+          <span class="v-divider"></span>
+          <span class="icon icon-arrow-left"></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="row mb-5">
+      <div class="col-12 col-md-3 mb-3">
+        <button class="btn arrow-btn btn-primary-light btn-lg" disabled>
+          <span class="btn-text">details</span>
+          <span class="v-divider"></span>
+          <span class="icon icon-arrow-left"></span>
+        </button>
+      </div>
+
+      <div class="col-12 col-md-3 mb-3">
+        <button class="btn arrow-btn btn-primary-light btn-md" disabled>
+          <span class="btn-text">details</span>
+          <span class="v-divider"></span>
+          <span class="icon icon-arrow-left"></span>
+        </button>
+      </div>
+
+      <div class="col-12 col-md-3 mb-3">
+        <button class="btn arrow-btn btn-primary-light btn-md" disabled>
+          <span class="btn-text">details</span>
+          <span class="v-divider"></span>
+          <span class="icon icon-arrow-left"></span>
+        </button>
+      </div>
+
+      <div class="col-12 col-md-3 mb-3">
+        <button class="btn arrow-btn btn-primary-light btn-sm" disabled>
+          <span class="btn-text">details</span>
+          <span class="v-divider"></span>
+          <span class="icon icon-arrow-left"></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="row mb-5">
+      <div class="col-12 col-md-3 mb-3">
+        <button class="btn arrow-btn btn-outline-primary-light btn-lg">
+          <span class="btn-text">details</span>
+          <span class="v-divider"></span>
+          <span class="icon icon-arrow-left"></span>
+        </button>
+      </div>
+
+      <div class="col-12 col-md-3 mb-3">
+        <button class="btn arrow-btn btn-outline-primary-light btn-md">
+          <span class="btn-text">details</span>
+          <span class="v-divider"></span>
+          <span class="icon icon-arrow-left"></span>
+        </button>
+      </div>
+
+      <div class="col-12 col-md-3 mb-3">
+        <button class="btn arrow-btn btn-outline-primary-light btn-md">
+          <span class="btn-text">details</span>
+          <span class="v-divider"></span>
+          <span class="icon icon-arrow-left"></span>
+        </button>
+      </div>
+
+      <div class="col-12 col-md-3 mb-3">
+        <button class="btn arrow-btn btn-outline-primary-light btn-sm">
+          <span class="btn-text">details</span>
+          <span class="v-divider"></span>
+          <span class="icon icon-arrow-left"></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="row mb-5">
+      <div class="col-12 col-md-3 mb-3">
+        <button class="btn btn-secondary-blue btn-sm">
+          Back to Requests List
+        </button>
+      </div>
+      <div class="col-12 col-md-3 mb-3">
+        <button class="btn btn-secondary-blue btn-sm">Back</button>
+      </div>
+    </div>
+
+    <div class="row mb-5">
+      <div class="col-12 col-md-3 mb-3">
+        <button class="btn btn-secondary-blue btn-sm">
+          Back to Requests List
+        </button>
+      </div>
+      <div class="col-12 col-md-3 mb-3">
+        <button class="btn btn-outline-secondary-blue btn-sm">
+          Back to Requests List
+        </button>
+      </div>
+      <div class="col-12 col-md-3 mb-3">
+        <button class="btn btn-secondary-blue btn-sm" disabled>
+          Back to Requests List
+        </button>
+      </div>
+      <div class="col-12 col-md-3 mb-3">
+        <button class="btn btn-secondary-blue btn-sm">Back</button>
+      </div>
+    </div>
+
+    <h3 class="heading">
+      <span> Primary buttons </span>
+    </h3>
+
+    <div class="row">
+      <div class="col-12 col-md-7">
+        <h4 class="text-primary-green mb-4">
+          Primary Buttons - Filled with small icon
+        </h4>
+
+        <div class="row mb-3">
+          <div class="col-12 col-md-3 mb-3">
+            <button class="btn arrow-btn btn-primary-light btn-sm">
+              <span class="btn-text">details</span>
+              <span class="v-divider"></span>
+              <span class="icon icon-arrow-left"></span>
+            </button>
+          </div>
+
+          <div class="col-12 col-md-3 mb-3">
+            <button class="btn arrow-btn btn-primary-light btn-md">
+              <span class="btn-text">details</span>
+              <span class="v-divider"></span>
+              <span class="icon icon-arrow-left"></span>
+            </button>
+          </div>
+
+          <div class="col-12 col-md-3 mb-3">
+            <button class="btn arrow-btn btn-primary-light btn-lg">
+              <span class="btn-text">details</span>
+              <span class="v-divider"></span>
+              <span class="icon icon-arrow-left"></span>
+            </button>
+          </div>
+
+          <div class="col-12 col-md-3 mb-3">
+            <button class="btn arrow-btn just-arrow btn-primary-light btn-md">
+              <span class="icon icon-arrow-left"></span>
+            </button>
+          </div>
+        </div>
+
+        <div class="row mb-3">
+          <div class="col-12 col-md-3 mb-3">
+            <button class="btn arrow-btn btn-primary-light btn-sm" disabled>
+              <span class="btn-text">details</span>
+              <span class="v-divider"></span>
+              <span class="icon icon-arrow-left"></span>
+            </button>
+          </div>
+
+          <div class="col-12 col-md-3 mb-3">
+            <button class="btn arrow-btn btn-primary-light btn-md" disabled>
+              <span class="btn-text">details</span>
+              <span class="v-divider"></span>
+              <span class="icon icon-arrow-left"></span>
+            </button>
+          </div>
+
+          <div class="col-12 col-md-3 mb-3">
+            <button class="btn arrow-btn btn-primary-light btn-lg" disabled>
+              <span class="btn-text">details</span>
+              <span class="v-divider"></span>
+              <span class="icon icon-arrow-left"></span>
+            </button>
+          </div>
+
+          <div class="col-12 col-md-3 mb-3">
+            <button
+              class="btn arrow-btn just-arrow btn-primary-light btn-md"
+              disabled
+            >
+              <span class="icon icon-arrow-left"></span>
+            </button>
+          </div>
+        </div>
+
+        <div class="row mb-3">
+          <div class="col-12 col-md-3 mb-3">
+            <button class="btn arrow-btn btn-secondary-blue btn-sm">
+              <span class="btn-text">details</span>
+              <span class="v-divider"></span>
+              <span class="icon icon-arrow-left"></span>
+            </button>
+          </div>
+
+          <div class="col-12 col-md-3 mb-3">
+            <button class="btn arrow-btn btn-secondary-blue btn-md">
+              <span class="btn-text">details</span>
+              <span class="v-divider"></span>
+              <span class="icon icon-arrow-left"></span>
+            </button>
+          </div>
+
+          <div class="col-12 col-md-3 mb-3">
+            <button class="btn arrow-btn btn-secondary-blue btn-lg">
+              <span class="btn-text">details</span>
+              <span class="v-divider"></span>
+              <span class="icon icon-arrow-left"></span>
+            </button>
+          </div>
+
+          <div class="col-12 col-md-3 mb-3">
+            <button class="btn arrow-btn just-arrow btn-secondary-blue btn-md">
+              <span class="icon icon-arrow-left"></span>
+            </button>
+          </div>
+        </div>
+
+        <div class="row mb-3">
+          <div class="col-12 col-md-3 mb-3">
+            <button class="btn arrow-btn btn-danger btn-sm">
+              <span class="btn-text">details</span>
+              <span class="v-divider"></span>
+              <span class="icon icon-arrow-left"></span>
+            </button>
+          </div>
+
+          <div class="col-12 col-md-3 mb-3">
+            <button class="btn arrow-btn btn-danger btn-md">
+              <span class="btn-text">details</span>
+              <span class="v-divider"></span>
+              <span class="icon icon-arrow-left"></span>
+            </button>
+          </div>
+
+          <div class="col-12 col-md-3 mb-3">
+            <button class="btn arrow-btn btn-danger btn-lg">
+              <span class="btn-text">details</span>
+              <span class="v-divider"></span>
+              <span class="icon icon-arrow-left"></span>
+            </button>
+          </div>
+
+          <div class="col-12 col-md-3 mb-3">
+            <button class="btn arrow-btn just-arrow btn-danger btn-md">
+              <span class="icon icon-arrow-left"></span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-5">
+        <h4 class="text-primary-green mb-4">Primary Buttons - Filled</h4>
+
+        <div class="row mb-3">
+          <div class="col-12 col-md-3 mb-3">
+            <button class="btn btn-primary-light btn-sm">details</button>
+          </div>
+
+          <div class="col-12 col-md-3 mb-3">
+            <button class="btn btn-primary-light btn-md">details</button>
+          </div>
+
+          <div class="col-12 col-md-3 mb-3">
+            <button class="btn btn-primary-light">details</button>
+          </div>
+
+          <div class="col-12 col-md-3 mb-3">
+            <button class="btn btn-primary-light btn-lg">details</button>
+          </div>
+        </div>
+
+        <div class="row mb-3">
+          <div class="col-12 col-md-3 mb-3">
+            <button class="btn btn-primary-light btn-sm" disabled>
+              details
+            </button>
+          </div>
+
+          <div class="col-12 col-md-3 mb-3">
+            <button class="btn btn-primary-light btn-md" disabled>
+              details
+            </button>
+          </div>
+
+          <div class="col-12 col-md-3 mb-3">
+            <button class="btn btn-primary-light" disabled>details</button>
+          </div>
+
+          <div class="col-12 col-md-3 mb-3">
+            <button class="btn btn-primary-light btn-lg" disabled>
+              details
+            </button>
+          </div>
+        </div>
+
+        <div class="row mb-3">
+          <div class="col-12 col-md-3 mb-3">
+            <button class="btn btn-secondary-blue btn-sm">Details</button>
+          </div>
+
+          <div class="col-12 col-md-3 mb-3">
+            <button class="btn btn-secondary-blue btn-md">Details</button>
+          </div>
+
+          <div class="col-12 col-md-3 mb-3">
+            <button class="btn btn-secondary-blue">Details</button>
+          </div>
+
+          <div class="col-12 col-md-3 mb-3">
+            <button class="btn btn-secondary-blue btn-lg">Details</button>
+          </div>
+        </div>
+
+        <div class="row mb-3">
+          <div class="col-12 col-md-3 mb-3">
+            <button class="btn btn-danger btn-sm">Details</button>
+          </div>
+
+          <div class="col-12 col-md-3 mb-3">
+            <button class="btn btn-danger btn-md">Details</button>
+          </div>
+
+          <div class="col-12 col-md-3 mb-3">
+            <button class="btn btn-danger">Details</button>
+          </div>
+
+          <div class="col-12 col-md-3 mb-3">
+            <button class="btn btn-danger btn-lg">Details</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h3 class="heading">
+      <span> Buttons with icons </span>
+    </h3>
+
+    <div class="row mb-3">
+      <div class="col-12 col-md-3 mb-3">
+        <button class="btn btn-primary-light btn-lg">
+          Contact
+          <span class="icon-download"></span>
+        </button>
+      </div>
+
+      <div class="col-12 col-md-3 mb-3">
+        <button class="btn btn-primary-light">
+          <span>Approve</span>
+          <span class="icon-check"></span>
+        </button>
+      </div>
+
+      <div class="col-12 col-md-3 mb-3">
+        <button class="btn btn-primary-light btn-md">
+          Share
+          <span class="icon-sharing"></span>
+        </button>
+      </div>
+
+      <div class="col-12 col-md-3 mb-3">
+        <button class="btn btn-primary-light btn-sm">
+          Download
+          <span class="icon-download"></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="row mb-3">
+      <div class="col-12 col-md-3 mb-3">
+        <button class="btn btn-outline-primary-light btn-lg">
+          جهة الاتصال
+          <span class="icon-download"></span>
+        </button>
+      </div>
+
+      <div class="col-12 col-md-3 mb-3">
+        <button class="btn btn-outline-primary-light">
+          موافقة
+          <span class="icon-check"></span>
+        </button>
+      </div>
+
+      <div class="col-12 col-md-3 mb-3">
+        <button class="btn btn-outline-primary-light btn-md">
+          مشاركة
+          <span class="icon-sharing"></span>
+        </button>
+      </div>
+
+      <div class="col-12 col-md-3 mb-3">
+        <button class="btn btn-outline-primary-light btn-sm">
+          تحميل
+          <span class="icon-download"></span>
+        </button>
+      </div>
+    </div>
+    <!-- outline buttons -->
+
+    <h3 class="heading">
+      <span> Secondary buttons </span>
+    </h3>
+
+    <div class="row mb-3">
+      <div class="col-12 col-md-3 mb-3">
+        <button class="btn arrow-btn btn-outline-primary-light btn-sm">
+          <span class="btn-text">details</span>
+          <span class="v-divider"></span>
+          <span class="icon icon-arrow-left"></span>
+        </button>
+      </div>
+
+      <div class="col-12 col-md-3 mb-3">
+        <button class="btn arrow-btn btn-outline-primary-light btn-md">
+          <span class="btn-text">details</span>
+          <span class="v-divider"></span>
+          <span class="icon icon-arrow-left"></span>
+        </button>
+      </div>
+
+      <div class="col-12 col-md-3 mb-3">
+        <button class="btn arrow-btn btn-outline-primary-light btn-lg">
+          <span class="btn-text">details</span>
+          <span class="v-divider"></span>
+          <span class="icon icon-arrow-left"></span>
+        </button>
+      </div>
+
+      <div class="col-12 col-md-3 mb-3">
+        <button
+          class="btn arrow-btn just-arrow btn-outline-primary-light btn-md"
+        >
+          <span class="icon icon-arrow-left"></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="row mb-3">
+      <div class="col-12 col-md-3 mb-3">
+        <button class="btn arrow-btn btn-outline-primary-light btn-sm" disabled>
+          <span class="btn-text">details</span>
+          <span class="v-divider"></span>
+          <span class="icon icon-arrow-left"></span>
+        </button>
+      </div>
+
+      <div class="col-12 col-md-3 mb-3">
+        <button class="btn arrow-btn btn-outline-primary-light btn-md" disabled>
+          <span class="btn-text">details</span>
+          <span class="v-divider"></span>
+          <span class="icon icon-arrow-left"></span>
+        </button>
+      </div>
+
+      <div class="col-12 col-md-3 mb-3">
+        <button class="btn arrow-btn btn-outline-primary-light btn-lg" disabled>
+          <span class="btn-text">details</span>
+          <span class="v-divider"></span>
+          <span class="icon icon-arrow-left"></span>
+        </button>
+      </div>
+
+      <div class="col-12 col-md-3 mb-3">
+        <button
+          class="btn arrow-btn just-arrow btn-outline-primary-light btn-md"
+          disabled
+        >
+          <span class="icon icon-arrow-left"></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="row mb-3">
+      <div class="col-12 col-md-3 mb-3">
+        <button class="btn arrow-btn btn-outline-secondary-blue btn-sm">
+          <span class="btn-text">details</span>
+          <span class="v-divider"></span>
+          <span class="icon icon-arrow-left"></span>
+        </button>
+      </div>
+
+      <div class="col-12 col-md-3 mb-3">
+        <button class="btn arrow-btn btn-outline-secondary-blue btn-md">
+          <span class="btn-text">details</span>
+          <span class="v-divider"></span>
+          <span class="icon icon-arrow-left"></span>
+        </button>
+      </div>
+
+      <div class="col-12 col-md-3 mb-3">
+        <button class="btn arrow-btn btn-outline-secondary-blue btn-lg">
+          <span class="btn-text">details</span>
+          <span class="v-divider"></span>
+          <span class="icon icon-arrow-left"></span>
+        </button>
+      </div>
+
+      <div class="col-12 col-md-3 mb-3">
+        <button
+          class="btn arrow-btn just-arrow btn-outline-secondary-blue btn-md"
+        >
+          <span class="icon icon-arrow-left"></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="row mb-3">
+      <div class="col-12 col-md-3 mb-3">
+        <button class="btn arrow-btn btn-outline-danger btn-sm">
+          <span class="btn-text">details</span>
+          <span class="v-divider"></span>
+          <span class="icon icon-arrow-left"></span>
+        </button>
+      </div>
+
+      <div class="col-12 col-md-3 mb-3">
+        <button class="btn arrow-btn btn-outline-danger btn-md">
+          <span class="btn-text">details</span>
+          <span class="v-divider"></span>
+          <span class="icon icon-arrow-left"></span>
+        </button>
+      </div>
+
+      <div class="col-12 col-md-3 mb-3">
+        <button class="btn arrow-btn btn-outline-danger btn-lg">
+          <span class="btn-text">details</span>
+          <span class="v-divider"></span>
+          <span class="icon icon-arrow-left"></span>
+        </button>
+      </div>
+
+      <div class="col-12 col-md-3 mb-3">
+        <button class="btn arrow-btn just-arrow btn-outline-danger btn-md">
+          <span class="icon icon-arrow-left"></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="row mb-3">
+      <div class="col-12 col-md-3 mb-3">
+        <button class="btn arrow-btn btn-outline-light btn-sm">
+          <span class="btn-text">details</span>
+          <span class="v-divider"></span>
+          <span class="icon icon-arrow-left"></span>
+        </button>
+      </div>
+
+      <div class="col-12 col-md-3 mb-3">
+        <button class="btn arrow-btn btn-outline-light btn-md">
+          <span class="btn-text">details</span>
+          <span class="v-divider"></span>
+          <span class="icon icon-arrow-left"></span>
+        </button>
+      </div>
+
+      <div class="col-12 col-md-3 mb-3">
+        <button class="btn arrow-btn btn-outline-light btn-lg">
+          <span class="btn-text">details</span>
+          <span class="v-divider"></span>
+          <span class="icon icon-arrow-left"></span>
+        </button>
+      </div>
+
+      <div class="col-12 col-md-3 mb-3">
+        <button class="btn arrow-btn just-arrow btn-outline-light btn-md">
+          <span class="icon icon-arrow-left"></span>
+        </button>
+      </div>
+    </div>
+
+    <h3 class="heading">
+      <span> Dropdown buttons </span>
+    </h3>
+
+    <div class="row mb-3">
+      <div class="col-12 col-md-4 mb-3">
+        <div class="btn-group m-2">
+          <button class="btn btn-primary-light btn-lg" type="button">
+            Large split button
+          </button>
+          <button
+            type="button"
+            class="btn btn-lg btn-primary-light dropdown-toggle dropdown-toggle-split"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            <span class="icon-arrow_drop_down"></span>
+          </button>
+          <div class="dropdown-menu dropdown-lg">
+            <a class="dropdown-item" href="#"> Action without icon</a>
+            <a class="dropdown-item" href="#"> Another action without icon</a>
+            <a class="dropdown-item" href="#">
+              Something else here without icon</a
+            >
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">
+              <span class="icon-bookmark_outlineturned_in_not"></span>
+              Separated link</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-4 mb-3">
+        <div class="btn-group m-2">
+          <button class="btn btn-primary-light" type="button">
+            Large split button
+          </button>
+          <button
+            type="button"
+            class="btn btn-primary-light dropdown-toggle dropdown-toggle-split"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            <span class="icon-arrow_drop_down"></span>
+          </button>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">
+              <span class="icon-edit"></span>
+              Action with icon</a
+            >
+            <a class="dropdown-item" href="#">
+              <span class="icon-shop"></span>
+              Another action with icon</a
+            >
+            <a class="dropdown-item" href="#">
+              <span class="icon-sharing"></span>
+              Something else here with icon</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-4 mb-3">
+        <div class="btn-group m-2">
+          <button class="btn btn-sm btn-primary-light" type="button">
+            Large split button
+          </button>
+          <button
+            type="button"
+            class="btn btn-sm btn-primary-light dropdown-toggle dropdown-toggle-split"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            <span class="icon-arrow_drop_down"></span>
+          </button>
+
+          <div class="dropdown-menu dropdown-sm">
+            <a class="dropdown-item" href="#">
+              <span class="icon-edit"></span>
+              Edit</a
+            >
+            <a class="dropdown-item text-danger" href="#">
+              <span class="icon-delete"></span>
+              Delete</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h3 class="heading">
+      <span> Text links </span>
+    </h3>
+
+    <div class="row mb-3">
+      <div class="col-12 col-md-4 mb-3">
+        <a href="./">Text link example</a>
+      </div>
+
+      <div class="col-12 col-md-4 mb-3">
+        <a href="./"
+          >Text link example
+          <span class="icon-arrow-right"></span>
+        </a>
+      </div>
+
+      <div class="col-12 col-md-4 mb-3">
+        <a href="./" class="is-disabled"
+          >Text link example
+          <span class="icon-arrow-right"></span>
+        </a>
+      </div>
+
+      <div class="col-12 col-md-4 mb-3">
+        <a href="./" class="link"><u>Text link example</u></a>
+      </div>
+
+      <div class="col-12 col-md-4 mb-3">
+        <a href="./">
+          <u>
+            Text link example
+            <span class="icon-arrow-right"></span>
+          </u>
+        </a>
+      </div>
+    </div>
+
+    <h3 class="heading">
+      <span> Small buttons with icons </span>
+    </h3>
+
+    <div class="row mb-5">
+      <div class="col-12 col-md-1 mb-3">
+        <button class="btn btn-ghost fill-primary-light-green">
+          <span class="icon-check"></span>
+        </button>
+      </div>
+
+      <div class="col-12 col-md-1 mb-3">
+        <button class="btn btn-ghost fill-primary-red">
+          <span class="icon-refresh"></span>
+        </button>
+      </div>
+
+      <div class="col-12 col-md-1 mb-3">
+        <button class="btn btn-ghost">
+          <span class="icon-users"></span>
+        </button>
+      </div>
+
+      <div class="col-12 col-md-1 mb-3">
+        <button class="btn btn-ghost fill-primary-light-green">
+          <span class="icon-edit"></span>
+        </button>
+      </div>
+
+      <div class="col-12 col-md-1 mb-3">
+        <button class="btn btn-ghost fill-primary-light-green">
+          <span class="icon-filters"></span>
+        </button>
+      </div>
+
+      <div class="col-12 col-md-1 mb-3">
+        <button class="btn btn-ghost fill-primary-green">
+          <span class="icon-wrong"></span>
+        </button>
+      </div>
+
+      <div class="col-12 col-md-1 mb-3">
+        <button class="btn btn-ghost fill-primary-blue">
+          <span class="icon-print"></span>
+        </button>
+      </div>
+
+      <div class="col-12 col-md-1 mb-3">
+        <button class="btn btn-ghost fill-primary-blue">
+          <span class="icon-heart"></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="row mb-5">
+      <div class="col-12 col-md-1 mb-3">
+        <button class="btn btn-ghost btn-lg fill-primary-light-green">
+          <span class="icon-check"></span>
+        </button>
+      </div>
+
+      <div class="col-12 col-md-1 mb-3">
+        <button class="btn btn-ghost btn-md fill-primary-light-green">
+          <span class="icon-check"></span>
+        </button>
+      </div>
+
+      <div class="col-12 col-md-1 mb-3">
+        <button class="btn btn-ghost btn-sm fill-primary-light-green">
+          <span class="icon-check"></span>
+        </button>
+      </div>
+
+      <div class="col-12 col-md-1 mb-3">
+        <button class="btn btn-ghost btn-xs fill-primary-light-green">
+          <span class="icon-check"></span>
+        </button>
+      </div>
+    </div>
+
+    <h3 class="heading">
+      <span>View options</span>
+    </h3>
+
+    <div class="row mb-3">
+      <div class="col-2">
+        <button class="btn btn-view-style">
+          List
+          <span class="icon-Group-3292"></span>
+        </button>
+      </div>
+      <div class="col-2">
+        <button class="btn btn-view-style" disabled>
+          Grid
+          <span class="icon-Group-3291"></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="row mb-3">
+      <div class="col-2">
+        <button class="btn btn-view-style" disabled>
+          List
+          <span class="icon-Group-3292"></span>
+        </button>
+      </div>
+      <div class="col-2">
+        <button class="btn btn-view-style">
+          Grid
+          <span class="icon-Group-3291"></span>
+        </button>
+      </div>
+    </div>
+  </div>
+</main>
+
+
