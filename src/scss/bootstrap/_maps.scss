@@ -9,6 +9,8 @@ $theme-colors-rgb: map-loop($theme-colors, to-rgb, "$value") !default;
 $theme-colors-text: (
   "primary": $primary-text,
   "secondary": $secondary-text,
+  "primary-light": $primary-light,
+  "primary-lighter": $primary-lighter,
   "success": $success-text,
   "info": $info-text,
   "warning": $warning-text,
@@ -20,6 +22,8 @@ $theme-colors-text: (
 $theme-colors-bg-subtle: (
   "primary": $primary-bg-subtle,
   "secondary": $secondary-bg-subtle,
+  "primary-light": $primary-light,
+  "primary-lighter": $primary-lighter,
   "success": $success-bg-subtle,
   "info": $info-bg-subtle,
   "warning": $warning-bg-subtle,
@@ -31,6 +35,8 @@ $theme-colors-bg-subtle: (
 $theme-colors-border-subtle: (
   "primary": $primary-border-subtle,
   "secondary": $secondary-border-subtle,
+  "primary-light": $primary-light,
+  "primary-lighter": $primary-lighter,
   "success": $success-border-subtle,
   "info": $info-border-subtle,
   "warning": $warning-border-subtle,
@@ -62,6 +68,8 @@ $utilities-text-colors: map-loop($utilities-text, rgba-css-var, "$key", "text") 
 $utilities-text-emphasis-colors: (
   "primary-emphasis": var(--#{$prefix}primary-text),
   "secondary-emphasis": var(--#{$prefix}secondary-text),
+  "primary-light-emphasis": var(--#{$prefix}primary-light-text),
+  "primary-lighter-emphasis": var(--#{$prefix}primary-lighter-text),
   "success-emphasis": var(--#{$prefix}success-text),
   "info-emphasis": var(--#{$prefix}info-text),
   "warning-emphasis": var(--#{$prefix}warning-text),
@@ -85,6 +93,8 @@ $utilities-bg-colors: map-loop($utilities-bg, rgba-css-var, "$key", "bg") !defau
 $utilities-bg-subtle: (
   "primary-subtle": var(--#{$prefix}primary-bg-subtle),
   "secondary-subtle": var(--#{$prefix}secondary-bg-subtle),
+  "primary-light-subtle": var(--#{$prefix}primary-light-bg-subtle),
+  "primary-lighter-subtle": var(--#{$prefix}primary-lighter-bg-subtle),
   "success-subtle": var(--#{$prefix}success-bg-subtle),
   "info-subtle": var(--#{$prefix}info-bg-subtle),
   "warning-subtle": var(--#{$prefix}warning-bg-subtle),
@@ -107,6 +117,8 @@ $utilities-border-colors: map-loop($utilities-border, rgba-css-var, "$key", "bor
 $utilities-border-subtle: (
   "primary-subtle": var(--#{$prefix}primary-border-subtle),
   "secondary-subtle": var(--#{$prefix}secondary-border-subtle),
+  "primary-light-subtle": var(--#{$prefix}primary-light-border-subtle),
+  "primary-lighter-subtle": var(--#{$prefix}primary-lighter-border-subtle),
   "success-subtle": var(--#{$prefix}success-border-subtle),
   "info-subtle": var(--#{$prefix}info-border-subtle),
   "warning-subtle": var(--#{$prefix}warning-border-subtle),

@@ -1,12 +1,19 @@
-$primary-color: #00355E;
+$primary-color: #004D71;
 $secondary-color: #C0935B;
+$et-primary-lighter-green: #f9fcfa;
+$et-secondary-green: #d6efe3;
+$et-secondary-orange: #f6972f;
+$et-secondary-gray: #414042;
+$et-secondary-light-gray: #cccccc;
+$et-secondary-glow-gray: #faf9f7;
+$et-secondary-plum: #78003B;
+$et-secondary-blue: #117ABE;
+$et-secondary-aqua: #73cee2;
+$secondary-color-hover: rgba(50, 173, 113, 0.1);
 $et-palette-info: #117abe;
 $et-palette-danger: #F66F5B;
 $et-palette-success: #32ad71;
 $et-palette-warning: #f9b122;
-
-$font-light: 'FF Shamel Family Sans One Book';
-$font-bold: 'FF Shamel Family Sans One';
 
 // design systems colors
 $colors: (
@@ -92,3 +99,9 @@ $input-padding-x-lg: 1rem !default;
     }
   }
 }
+
+
+$font-bold: 'FF Shamel Family Sans One';
+$font-light: 'FF Shamel Family Sans One Book';
+
+$primary-color-light: #DEE9EE;

@@ -64,6 +64,13 @@ function html() {
     .pipe(browserSync.stream());
 }
 
+function svg() {
+  return gulp
+    .src("src/images/svg/**/*")
+    .pipe(gulp.dest("build/images/svg"))
+    .pipe(browserSync.stream());
+}
+
 function image() {
   return gulp
     .src("src/images/**/*")
@@ -142,7 +149,7 @@ function watch() {
 
 const dev = gulp.series(
   clean,
-  gulp.parallel(style, html, image, font),
+  gulp.parallel(style, html, image, font, svg),
   gulp.parallel(watch)
 );
 
