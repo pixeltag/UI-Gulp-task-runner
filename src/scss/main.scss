@@ -2,8 +2,10 @@
 @import './bootstrap/_bootstrap.scss';
 @import './utilites';
 @import './_header.scss';
+@import './_footer.scss';
 @import './_fonts';
 @import './list';
+@import './_card';
 
 body {
     font-family: 'FF Shamel Family Sans One Book', Verdana, Geneva, Tahoma, sans-serif;

@@ -118,9 +118,9 @@
   background-color: #000;
   height: 255px;
   padding-top: 110px;
-  background-image: url('../images/banner.jpg');
+  background-image: url('../images/header-banner.png');
   background-size: cover;
-    background-position: center -270px;
+    background-position: center -40px;
 }
 
 .nav-item.active {
@@ -156,6 +156,7 @@
   border-radius: 100px;
   height: 44px;
   line-height: 2.3rem;
+  border: 0;
 
   &:hover, &:active {
     background-color: darken(#38C0F0, 5%);

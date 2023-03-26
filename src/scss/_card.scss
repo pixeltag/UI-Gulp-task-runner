@@ -1,0 +1,22 @@
+.card-blue-gray {
+    background-color: $primary-color-light;
+    border: 1px solid #DEE9EE;
+    padding: 15px;
+    border-radius: 5px;
+
+    .icons {
+        width: 33px;
+        height: 33px;
+        margin-left: 10px;
+    }
+
+    .card-title {
+        font-weight: 600;
+    }
+}
+
+.collapse-icon {
+    height:24px;
+    width: 24px;
+    margin: 8px;
+}
