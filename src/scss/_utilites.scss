@@ -7,3 +7,22 @@
   width: 57px;
   height: 57px;
 }
+
+.link {
+  text-decoration: none;
+  color: $secondary-aqua;
+}
+
+.aqua-circle {
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
+  background-color: rgba(56, 192, 240, 0.3);
+  font-size: 34px;
+  padding-top: 35px;
+}
+
+.two-factor {
+  width: 240px;
+  margin: 0 auto;
+}
