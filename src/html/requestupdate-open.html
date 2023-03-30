@@ -1,0 +1,545 @@
+@@include("./layout/header.html")
+
+<main>
+  <div class="container pt-5">
+    <div class="row mb-5">
+      <div class="col-md-12 col-sm-12">
+        <div
+          class="card border-right-success shadow-sm px-3 py-2 d-flex flex-row justify-content-between align-items-center rounded-bottom-0 border-bottom"
+        >
+          <div>
+            <h5 class="m-0">المنشاة</h5>
+          </div>
+          <div>
+            <button class="btn btn-secondary btn-collapse py-2">
+              <img src="../images/svg/arrow-down.svg" class="icons-xs" />
+            </button>
+          </div>
+        </div>
+        <div class="card border-0 shadow-sm mb-3 rounded-top-0 p-4">
+          <h6>المنشأة</h6>
+          <div class="card py-2 px-3">
+            <div class="row">
+              <div class="col-12 col-md-3">
+                <img src="../images/svg/building.svg" />
+              </div>
+
+              <div class="col-12 col-md-3 lh-lg">
+                <label>اسم الشركة</label>
+                <div class="fw-medium">الشركة...</div>
+              </div>
+
+              <div class="col-12 col-md-3 lh-lg">
+                <label>رقم السجل</label>
+                <div class="fw-medium">123456789</div>
+              </div>
+
+              <div class="col-12 col-md-3 lh-lg">
+                <label>تاريخ انتهاء السجل</label>
+                <div class="fw-medium">30-12-2023</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="card border-right-error shadow-sm px-3 py-2 d-flex flex-row justify-content-between align-items-center rounded-bottom-0 border-bottom"
+        >
+          <div>
+            <h5 class="m-0">بيانات المشروع</h5>
+          </div>
+          <div>
+            <span class="text-danger">لم يتم اكمال البيانات</span>
+            <button class="btn btn-secondary btn-collapse py-2 me-2">
+              <img src="../images/svg/arrow-down.svg" class="icons-xs" />
+            </button>
+          </div>
+        </div>
+        <div class="card border-0 shadow-sm mb-3 rounded-top-0 p-4">
+          <h6 class="mb-5">بيانات المشروع</h6>
+          <form class="row g-3" novalidate>
+            <div class="col-12 col-md-12 lh-lg">
+              <div class="form-group mb-4">
+                <label for=""
+                  >اسم المشروع <span class="text-danger">*</span></label
+                >
+                <input
+                  id="name"
+                  class="form-control invalid-input"
+                  placeholder="يكتب هنا اسم المشروع المختصر "
+                  required
+                />
+                <div class="invalid-feedback d-block">
+                  خطاء في ادخال البيانات
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 lh-lg">
+              <div class="form-group mb-4">
+                <label for=""
+                  >حالة المشروع <span class="text-danger">*</span></label
+                >
+                <select
+                  id="name"
+                  class="form-select"
+                  placeholder="قائم / غير قائم "
+                >
+                  <option>قائم</option>
+                  <option>غير قائم</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 lh-lg">
+              <div class="form-group mb-4">
+                <label for=""
+                  >مساحة أرض المشروع <span class="text-danger">*</span></label
+                >
+                <input
+                  id="name"
+                  class="form-control"
+                  placeholder="متر مربع - م2"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 lh-lg">
+              <div class="form-group mb-4">
+                <label for="">
+                  التاريخ المتوقع لطرح المشروع
+                  <span class="text-danger">*</span>
+                </label>
+                <input
+                  type="text"
+                  id="name"
+                  class="form-control form-calendar"
+                  placeholder="0000/00/00"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 lh-lg">
+              <div class="form-group mb-4">
+                <label for="">
+                  تاريخ التشغيل التجاري للمشروع
+                  <span class="text-danger">*</span>
+                </label>
+                <input
+                  type="text"
+                  id="name"
+                  class="form-control form-calendar"
+                  placeholder="سعودي"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="col-12 col-md-12 lh-lg">
+              <div class="form-group mb-4">
+                <label for="">
+                  نبذه عن المشروع
+                  <span class="text-danger">*</span>
+                </label>
+                <input
+                  type="text"
+                  id="name"
+                  class="form-control"
+                  placeholder="يكتب هنا نص 500 حرف "
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="col-12 col-md-12 lh-lg">
+              <div class="form-group mb-4">
+                <label for="">
+                  موقع المشروع
+                  <span class="text-danger">*</span>
+                </label>
+                <input
+                  type="text"
+                  id="name"
+                  class="form-control form-location"
+                  placeholder="إضافة الموقع"
+                  required
+                />
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <div
+          class="card border-right-error shadow-sm px-3 py-2 d-flex flex-row justify-content-between align-items-center rounded-bottom-0 border-bottom"
+        >
+          <div>
+            <h5 class="m-0">بيانات شركاء المشروع</h5>
+          </div>
+          <div>
+            <span class="text-danger">لم يتم اكمال البيانات</span>
+            <button class="btn btn-secondary btn-collapse py-2 me-2">
+              <img src="../images/svg/arrow-down.svg" class="icons-xs" />
+            </button>
+          </div>
+        </div>
+
+        <div class="card border-0 shadow-sm mb-3 rounded-top-0 p-4">
+          <h6 class="mb-5">بيانات شركاء المشروع</h6>
+          <form class="row g-3" novalidate>
+            <div class="col-12 col-md-6 lh-lg">
+              <div class="form-group mb-4">
+                <label for=""
+                  >رقم السجل التجاري <span class="text-danger">*</span></label
+                >
+                <input
+                  id="name"
+                  class="form-control invalid-input"
+                  placeholder="يكتب هنا اسم المشروع المختصر "
+                  required
+                  value="0000000000"
+                />
+                <div class="invalid-feedback d-block">
+                  خطاء في ادخال البيانات
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 lh-lg">
+              <div class="form-group mb-4">
+                <label for=""
+                  >اسم الشركة <span class="text-danger">*</span></label
+                >
+                <input
+                  id="name"
+                  class="form-control"
+                  placeholder="يكتب هنا اسم المشروع المختصر "
+                  required
+                  value="يكتب هنا اسم الشركة "
+                />
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 lh-lg">
+              <div class="form-group mb-4">
+                <label for=""
+                  >جنسية الشركة <span class="text-danger">*</span></label
+                >
+                <input
+                  id="name"
+                  class="form-control"
+                  placeholder="يكتب هنا اسم المشروع المختصر "
+                  required
+                  value="يكتب هنا جنسية الشركة"
+                />
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 lh-lg">
+              <div class="form-group mb-4">
+                <label for=""
+                  >نسبة الملكية <span class="text-danger">*</span></label
+                >
+                <input
+                  id="name"
+                  class="form-control"
+                  placeholder="يكتب هنا اسم المشروع المختصر "
+                  required
+                  value="500.0000"
+                />
+              </div>
+            </div>
+
+            <div class="col-12 col-md-12 lh-lg text-start">
+              <button class="btn btn-primary px-4 py-2">إضافة</button>
+            </div>
+
+            <div class="col-12 col-md-12">
+              <div class="card py-2 px-3 mt-5">
+                <div class="row">
+                  <div class="col-12 col-md-3">
+                    <img src="../images/svg/profile.svg" />
+                  </div>
+
+                  <div class="col-12 col-md-3 lh-lg">
+                    <label>السجل التجاري</label>
+                    <div class="fw-medium">0000000000</div>
+                  </div>
+
+                  <div class="col-12 col-md-2 lh-lg">
+                    <label>اسم الشركة </label>
+                    <div class="fw-medium">اسم الشركة</div>
+                  </div>
+
+                  <div class="col-12 col-md-2 lh-lg">
+                    <label>الجنسية</label>
+                    <div class="fw-medium">جنسية الشركة</div>
+                  </div>
+
+                  <div class="col-12 col-md-2 lh-lg">
+                    <label>نسبة الملكية</label>
+                    <div class="text-success fw-medium">20%</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <div
+          class="card border-right-success shadow-sm px-3 py-2 d-flex flex-row justify-content-between align-items-center rounded-bottom-0 border-bottom"
+        >
+          <div>
+            <h5 class="m-0">البيانات الاقتصادية</h5>
+          </div>
+          <div>
+            <button class="btn btn-secondary btn-collapse py-2">
+              <img src="../images/svg/arrow-down.svg" class="icons-xs" />
+            </button>
+          </div>
+        </div>
+        <div class="card border-0 shadow-sm mb-3 rounded-top-0 p-4">
+          <h6 class="mb-5">البيانات الاقتصادية</h6>
+          <form class="row g-3" novalidate>
+            <div class="col-12 col-md-6 lh-lg">
+              <div class="form-group mb-4">
+                <label for=""
+                  >عدد الوظائف المستهدفة
+                  <span class="text-danger">*</span></label
+                >
+                <input
+                  id="name"
+                  class="form-control"
+                  placeholder="يكتب هنا اسم المشروع المختصر "
+                  required
+                  value="0000"
+                />
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 lh-lg">
+              <div class="form-group mb-4">
+                <label for=""
+                  >نسبة السعودة <span class="text-danger">*</span></label
+                >
+                <input
+                  id="name"
+                  class="form-control"
+                  placeholder="يكتب هنا اسم المشروع المختصر "
+                  required
+                  value="%100 "
+                />
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 lh-lg">
+              <div class="form-group mb-4">
+                <label for=""
+                  >التكلفة الرأسمالية للمشروع
+                  <span class="text-danger">*</span></label
+                >
+                <input
+                  id="name"
+                  class="form-control"
+                  placeholder="يكتب هنا اسم المشروع المختصر "
+                  required
+                  value="مليون ريال سعودي"
+                />
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 lh-lg">
+              <div class="form-group mb-4">
+                <label for=""
+                  >تكاليف التشغيل والصيانة الثابتة المتوقعة
+                  <span class="text-danger">*</span></label
+                >
+                <input
+                  id="name"
+                  class="form-control"
+                  placeholder="يكتب هنا اسم المشروع المختصر "
+                  required
+                  value="هللة / كيلوات ساعة "
+                />
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 lh-lg">
+              <div class="form-group mb-4">
+                <label for=""
+                  >تكاليف التشغيل والصيانة المتغيرة المتوقعة
+                  <span class="text-danger">*</span></label
+                >
+                <input
+                  id="name"
+                  class="form-control"
+                  placeholder="يكتب هنا اسم المشروع المختصر "
+                  required
+                  value="هللة / كيلوات ساعة "
+                />
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 lh-lg">
+              <div class="form-group mb-4">
+                <label for=""
+                  >نسبة المحتوى المحلي <span class="text-danger">*</span></label
+                >
+                <input
+                  id="name"
+                  class="form-control"
+                  placeholder="يكتب هنا اسم المشروع المختصر "
+                  required
+                  value="%100 "
+                />
+              </div>
+            </div>
+
+            <div class="col-12 col-md-12 lh-lg">
+              <div class="form-group mb-4">
+                <label for=""
+                  >عدد سنوات التشغيل <span class="text-danger">*</span></label
+                >
+                <input
+                  id="name"
+                  class="form-control"
+                  placeholder="يكتب هنا اسم المشروع المختصر "
+                  required
+                  value=""
+                />
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <div
+          class="card border-right-success shadow-sm px-3 py-2 d-flex flex-row justify-content-between align-items-center rounded-bottom-0 border-bottom"
+        >
+          <div>
+            <h5 class="m-0">المرفقات</h5>
+          </div>
+          <div>
+            <button class="btn btn-secondary btn-collapse py-2">
+              <img src="../images/svg/arrow-down.svg" class="icons-xs" />
+            </button>
+          </div>
+        </div>
+        <div class="card border-0 shadow-sm mb-3 rounded-top-0 p-4">
+          <h6 class="mb-5">تحميل الوثائق</h6>
+          <form class="row g-3" novalidate>
+            <div class="col-12 col-md-12 lh-lg">
+              <div class="card border-blue-gray download-item">
+                النموذج المالي
+              </div>
+            </div>
+            <div class="col-12 col-md-12 lh-lg">
+              <div class="card border-blue-gray download-item">
+                دراسة الجدوى الاقتصادية
+              </div>
+            </div>
+            <div class="col-12 col-md-12 lh-lg">
+              <div class="card border-blue-gray download-item">
+                شهادة التأمينات الاجتماعية
+              </div>
+            </div>
+            <div class="col-12 col-md-12 lh-lg">
+              <div class="card border-blue-gray download-item">
+                الرخصة البيئية
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <div
+          class="card border-right-success shadow-sm px-3 py-2 d-flex flex-row justify-content-between align-items-center rounded-bottom-0 border-bottom"
+        >
+          <div>
+            <h5 class="m-0">بيانات أساسية للمشروع</h5>
+          </div>
+          <div>
+            <button class="btn btn-secondary btn-collapse py-2">
+              <img src="../images/svg/arrow-down.svg" class="icons-xs" />
+            </button>
+          </div>
+        </div>
+        <div class="card border-0 shadow-sm mb-3 rounded-top-0 p-4">
+          <h6 class="mb-5">بيانات أساسية للمشروع</h6>
+          <form class="row g-3" novalidate>
+            <div class="col-12 col-md-6 lh-lg">
+              <div class="form-group mb-4">
+                <label for="">
+                  القطاع
+                  <span class="text-danger">*</span></label
+                >
+                <select id="name" class="form-select" required>
+                  <option>---</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 lh-lg">
+              <div class="form-group mb-4">
+                <label for="">
+                  حالة المشروع <span class="text-danger">*</span></label
+                >
+                <input
+                  id="name"
+                  class="form-control"
+                  placeholder="يكتب هنا اسم المشروع المختصر "
+                  required
+                  value=""
+                />
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 lh-lg">
+              <div class="form-group mb-4">
+                <label for="">
+                  نوع الطلب
+                  <span class="text-danger">*</span></label
+                >
+                <input
+                  id="name"
+                  class="form-control"
+                  placeholder="يكتب هنا اسم المشروع المختصر"
+                  required
+                  value=""
+                />
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 lh-lg">
+              <div class="form-group mb-4">
+                <label for="">
+                  نوع المشروع
+                  <span class="text-danger">*</span></label
+                >
+                <input
+                  id="name"
+                  class="form-control"
+                  placeholder="يكتب هنا اسم المشروع المختصر "
+                  required
+                  value=""
+                />
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="page-footer bg-white shadow-sm">
+    <div class="container">
+      <div class="d-flex py-4 flex-row-reverse">
+        <button class="btn btn-primary me-3 px-3">ارسال</button>
+        <button class="btn btn-outline-primary px-3">
+          حفظ واستكمال لاحقاً
+        </button>
+      </div>
+    </div>
+  </div>
+</main>
+
+@@include("./layout/footer.html")

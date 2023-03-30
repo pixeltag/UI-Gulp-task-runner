@@ -1,0 +1,27 @@
+.badge {
+    border-radius: 100px;
+    font-size: 14px;
+    padding: 9px 32px 7px;
+    min-width: 140px;
+    font-weight: 400;
+}
+
+.badge-danger {
+    background: rgba(237, 55, 76, 0.3);
+    color:#ED374C;
+}
+
+.badge-success {
+    background:  rgba(75, 200, 99, 0.1);
+    color:#4BC863;
+}
+
+.badge-draft {
+    color: #fff;
+    background:rgba(0, 77, 113, 0.5);
+}
+
+.badge-light-gray {
+    color: #42535C;
+    background:rgba(66, 83, 92, 0.1);
+}

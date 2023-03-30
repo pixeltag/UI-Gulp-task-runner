@@ -8,6 +8,24 @@
   height: 57px;
 }
 
+.icons-sm {
+  width: 38px;
+  height: 38px;
+}
+
+.btn-search {
+  background-color: $primary-color-light;
+  border-color: $primary-color-light;
+  width: 58px;
+  height: 58px;
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: darken($primary-color-light, 5%);
+    border-color: $primary-color-light;
+  }
+}
+
 .link {
   text-decoration: none;
   color: $secondary-aqua;
@@ -25,4 +43,98 @@
 .two-factor {
   width: 240px;
   margin: 0 auto;
+}
+
+.border-secondary-aqua {
+  border:0;
+  border-right: 8px solid $secondary-aqua;
+}
+
+.border-secondary-dark {
+  border:0;
+  border-right: 8px solid #35424A;
+}
+
+.border-primary-blue {
+  border:0;
+  border-right: 8px solid #80A6B8
+  ;
+}
+
+.border-right-success {
+  border:0;
+  border-right: 8px solid #4BC863;
+}
+
+.border-right-error {
+  border:0;
+  border-right: 8px solid #ED374C;
+}
+
+label {
+  font-size: 14px;
+  color: #42535C;
+}
+
+.invalid-feedback {
+  color:#ED374C;
+  font-size: 12px;
+}
+
+.invalid-input {
+  border-color: #ED374C;
+  &:focus {
+    border-color: #ED374C;
+    box-shadow: 0 0 0 0.25rem rgba(#ED374C,.25);
+  }
+}
+
+.form-select {
+  background-position: left 0.75rem center;
+  padding: 1.1rem 1.1rem  0.75rem 2.25rem;
+}
+
+.form-calendar {
+  background-position: left 0.75rem center;
+  appearance: none;
+  background-image: url('../images/svg/date.svg');
+  background-repeat: no-repeat;
+}
+
+.form-location {
+  background-position: left 0.75rem center;
+  appearance: none;
+  background-image: url('../images/svg/map.svg');
+  background-repeat: no-repeat;
+}
+
+.btn-collapse {
+  background-color: $primary-color-light;
+  border-color: $primary-color-light;
+  width: 47px;
+  height: 41px;
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: darken($primary-color-light, 5%);
+    border-color: $primary-color-light;
+  }
+  img {
+    width: 18px;
+    height: 17px;
+  }
+}
+
+
+.border-blue-gray {
+  border: 1px solid #DEE9EE;
+}
+
+.download-item {
+  padding: 16px 16px 16px 35px;
+  background-position: left 0.75rem center;
+  border-radius: 5px;
+  appearance: none;
+  background-image: url('../images/svg/document-download.svg');
+  background-repeat: no-repeat;
 }

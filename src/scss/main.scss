@@ -6,9 +6,10 @@
 @import './_fonts';
 @import './list';
 @import './_card';
+@import './_badge';
 
 body {
-    font-family: 'FF Shamel Family Sans One Book', Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Noto Kufi Arabic', Verdana, Geneva, Tahoma, sans-serif;
     background-color: #F8FAFC;
     line-height: 3.2rem;
     color: $primary-light;

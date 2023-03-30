@@ -120,7 +120,7 @@
   padding-top: 110px;
   background-image: url('../images/header-banner.png');
   background-size: cover;
-    background-position: center -40px;
+    background-position: center 0;
 }
 
 .nav-item.active {
@@ -161,4 +161,20 @@
   &:hover, &:active {
     background-color: darken(#38C0F0, 5%);
   }
+}
+
+.btn.nav-header_user_btn {
+  background: transparent;
+  color:white;
+  border: 0;
+  padding: 0;
+
+  &:hover, &:focus, &:active{
+    color:white;
+    background: none;
+  }
+}
+
+.nav-header_user_icon {
+  margin-right: 10px;
 }
