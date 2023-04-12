@@ -1,0 +1,43 @@
+.btn-back {
+    font-size: 24px;
+    color:#C0935B;
+}
+
+.page-head_search-input {
+    background-color: #DEE9EE;
+    border-radius: 48px;
+    width: 359px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1em;
+
+    input {
+        border: 0;
+        background-color: transparent;
+        height: 40px;
+        &:focus-visible, &:focus, &:active {
+            border:0;
+            outline: 0;
+        }
+    }
+}
+
+.page-head_btn-sm {
+    background-color: #DEE9EE;
+    border-radius: 48px;
+
+    &:hover {
+        background-color: darken(#DEE9EE,5%);
+    }
+}
+
+.page-head_red-notification {
+    background-color: red;
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    border-radius: 100%;
+}

@@ -138,3 +138,10 @@ label {
   background-image: url('../images/svg/document-download.svg');
   background-repeat: no-repeat;
 }
+
+
+.d-sm-none {
+  @include media-breakpoint-down(sm) {
+    display: none;
+  }
+}

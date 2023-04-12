@@ -12,6 +12,7 @@ const imageminZopfli = require("imagemin-zopfli");
 const imageminMozjpeg = require("imagemin-mozjpeg");
 const imageminGiflossy = require("imagemin-giflossy");
 const debug = require("gulp-debug");
+const cache = require("gulp-cache");
 
 // compile scss to css
 
@@ -47,6 +48,7 @@ function style() {
       })
     )
     .pipe(gulp.dest("./build/css"))
+    .pipe(cache.clear())
     .pipe(browserSync.stream());
 }
 
@@ -61,6 +63,7 @@ function html() {
     )
     .pipe(replace(".css", ".min.css"))
     .pipe(gulp.dest("./build/"))
+    .pipe(cache.clear())
     .pipe(browserSync.stream());
 }
 

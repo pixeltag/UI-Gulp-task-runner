@@ -37,9 +37,12 @@
 
 }
 
-#logo {
-  width: 140px;
-  height: 48px;
+.logo {
+  margin-top: 0.7em;
+
+  @include media-breakpoint-up(lg) {
+    margin: 0;
+  }
 }
 
 .navbar-brand {
@@ -109,18 +112,26 @@
 
 .header-navigation {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
+
+  @include media-breakpoint-up(lg) {
+    justify-content: space-between;
+  }
 }
 
 
 .nav-header {
   background-color: #000;
-  height: 255px;
+  height: auto;
   padding-top: 110px;
   background-image: url('../images/header-banner.png');
   background-size: cover;
     background-position: center 0;
+
+    @include media-breakpoint-up(md) {
+      height: 255px;
+    }
 }
 
 .nav-item.active {
@@ -169,6 +180,10 @@
   border: 0;
   padding: 0;
 
+  @include media-breakpoint-up(md) {
+    padding-top: 3.5rem;
+  }
+
   &:hover, &:focus, &:active{
     color:white;
     background: none;
@@ -177,4 +192,21 @@
 
 .nav-header_user_icon {
   margin-right: 10px;
+}
+
+.mobile-menu-btn {
+  width:28px;
+  height: 30px;
+  border-radius: 5px;
+  display: inherit;
+  text-align: center;
+
+  @include media-breakpoint-up(lg) {
+    display: none;
+  }
+
+    svg {
+      stroke: #fff;
+      width: 25px;
+    }
 }

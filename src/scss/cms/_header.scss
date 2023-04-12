@@ -1,0 +1,37 @@
+.sidebar {
+    background-image: url('../../images/nav-bg.png');
+    background-color: #00355E;
+    flex: 0 0 auto;
+    width:81px;
+    position: fixed;
+    height: 100%;
+    color:#fff;
+    background-size: cover;
+    padding: 0;
+}
+
+.sidebar-sticky {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    text-align: center;
+}
+
+.sidebar-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar-nav_link {
+    width: 100%;
+    display: block;
+    height: 60px;
+    padding: 5px;
+
+    &.active {
+        background: rgba(255,255,255,0.10);
+        border-right: 3px solid #C0935B;
+    }
+}
