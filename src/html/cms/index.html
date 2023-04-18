@@ -7,135 +7,247 @@
     <main role="main" class="main-content">
       @@include('./layout/pageHead.html')
 
-      <canvas class="my-4 w-100" id="myChart" width="900" height="380"></canvas>
+      <div class="container">
+        <div class="d-flex mb-5 mt-5">
+          <div class="flex-fill ps-2 request-list_card">
+            <div
+              class="card border-0 shadow-sm px-3 py-4 d-flex flex-row justify-content-between"
+            >
+              <div>
+                <h2 class="mb-4">3</h2>
+                <p class="m-0 lh-1">مسودات</p>
+              </div>
+              <div>
+                <img src="../images/svg/document-text.svg" class="icons-sm" />
+              </div>
+            </div>
+          </div>
 
-      <h2>Section title</h2>
-      <div class="table-responsive">
-        <table class="table table-striped table-sm">
-          <thead>
-            <tr>
-              <th>#</th>
-              <th>Header</th>
-              <th>Header</th>
-              <th>Header</th>
-              <th>Header</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>1,001</td>
-              <td>Lorem</td>
-              <td>ipsum</td>
-              <td>dolor</td>
-              <td>sit</td>
-            </tr>
-            <tr>
-              <td>1,002</td>
-              <td>amet</td>
-              <td>consectetur</td>
-              <td>adipiscing</td>
-              <td>elit</td>
-            </tr>
-            <tr>
-              <td>1,003</td>
-              <td>Integer</td>
-              <td>nec</td>
-              <td>odio</td>
-              <td>Praesent</td>
-            </tr>
-            <tr>
-              <td>1,003</td>
-              <td>libero</td>
-              <td>Sed</td>
-              <td>cursus</td>
-              <td>ante</td>
-            </tr>
-            <tr>
-              <td>1,004</td>
-              <td>dapibus</td>
-              <td>diam</td>
-              <td>Sed</td>
-              <td>nisi</td>
-            </tr>
-            <tr>
-              <td>1,005</td>
-              <td>Nulla</td>
-              <td>quis</td>
-              <td>sem</td>
-              <td>at</td>
-            </tr>
-            <tr>
-              <td>1,006</td>
-              <td>nibh</td>
-              <td>elementum</td>
-              <td>imperdiet</td>
-              <td>Duis</td>
-            </tr>
-            <tr>
-              <td>1,007</td>
-              <td>sagittis</td>
-              <td>ipsum</td>
-              <td>Praesent</td>
-              <td>mauris</td>
-            </tr>
-            <tr>
-              <td>1,008</td>
-              <td>Fusce</td>
-              <td>nec</td>
-              <td>tellus</td>
-              <td>sed</td>
-            </tr>
-            <tr>
-              <td>1,009</td>
-              <td>augue</td>
-              <td>semper</td>
-              <td>porta</td>
-              <td>Mauris</td>
-            </tr>
-            <tr>
-              <td>1,010</td>
-              <td>massa</td>
-              <td>Vestibulum</td>
-              <td>lacinia</td>
-              <td>arcu</td>
-            </tr>
-            <tr>
-              <td>1,011</td>
-              <td>eget</td>
-              <td>nulla</td>
-              <td>Class</td>
-              <td>aptent</td>
-            </tr>
-            <tr>
-              <td>1,012</td>
-              <td>taciti</td>
-              <td>sociosqu</td>
-              <td>ad</td>
-              <td>litora</td>
-            </tr>
-            <tr>
-              <td>1,013</td>
-              <td>torquent</td>
-              <td>per</td>
-              <td>conubia</td>
-              <td>nostra</td>
-            </tr>
-            <tr>
-              <td>1,014</td>
-              <td>per</td>
-              <td>inceptos</td>
-              <td>himenaeos</td>
-              <td>Curabitur</td>
-            </tr>
-            <tr>
-              <td>1,015</td>
-              <td>sodales</td>
-              <td>ligula</td>
-              <td>in</td>
-              <td>libero</td>
-            </tr>
-          </tbody>
-        </table>
+          <div class="flex-fill px-2 request-list_card">
+            <div
+              class="card border-0 shadow-sm px-3 py-4 d-flex flex-row justify-content-between"
+            >
+              <div>
+                <h2 class="mb-4">5</h2>
+                <p class="m-0 lh-1">طلب تمديد</p>
+              </div>
+              <div>
+                <img src="../images/svg/clock.svg" class="icons-sm" />
+              </div>
+            </div>
+          </div>
+
+          <div class="flex-fill px-2 request-list_card">
+            <div
+              class="card border-0 shadow-sm px-3 py-4 d-flex flex-row justify-content-between"
+            >
+              <div>
+                <h2 class="mb-4">5</h2>
+                <p class="m-0 lh-1">طلب الغاء</p>
+              </div>
+              <div>
+                <img src="../images/svg/danger.svg" class="icons-sm" />
+              </div>
+            </div>
+          </div>
+
+          <div class="flex-fill px-2 request-list_card">
+            <div
+              class="card border-0 shadow-sm px-3 py-4 d-flex flex-row justify-content-between"
+            >
+              <div>
+                <h2 class="mb-4">5</h2>
+                <p class="m-0 lh-1">طلب تعديل كميات</p>
+              </div>
+              <div>
+                <img src="../images/svg/clipboard-tick.svg" class="icons-sm" />
+              </div>
+            </div>
+          </div>
+
+          <div class="flex-fill pe-2 request-list_card">
+            <div
+              class="card border-0 shadow-sm px-3 py-4 d-flex flex-row justify-content-between"
+            >
+              <div>
+                <h2 class="mb-4">5</h2>
+                <p class="m-0 lh-1">طلب تجديد</p>
+              </div>
+              <div>
+                <img src="../images/svg/clipboard-tick.svg" class="icons-sm" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12">
+            <div class="fs-5 mb-2">الطلبات الجديدة</div>
+          </div>
+          <div class="col-12 mb-5">
+            <div class="card shadow-sm border-secondary-aqua px-3 py-3 mb-2">
+              <div class="row">
+                <div class="col-12 col-md-6">
+                  <div class="d-flex align-items-center">
+                    <div class="ms-3">
+                      <img src="../images/svg/request-icon-1.svg" />
+                    </div>
+                    <div class="lh-lg">
+                      <div><strong>طلب تخصيص جديد</strong>, مصنع ساسكو</div>
+                      <p class="m-0 text-black-50 opacity-5">
+                        34435# | خدمة التخصيص و الترخيص
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <div class="text-start">
+                    <span class="badge rounded-pill badge-success"
+                      >وثيقة تخصيص</span
+                    >
+                    <p class="m-0 text-black-50 text-opacity-25 lh-1">
+                      12.10.2022
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card shadow-sm border-secondary-aqua px-3 py-3 mb-2">
+              <div class="row">
+                <div class="col-12 col-md-6">
+                  <div class="d-flex align-items-center">
+                    <div class="ms-3">
+                      <img src="../images/svg/request-icon-1.svg" />
+                    </div>
+                    <div class="lh-lg">
+                      <div><strong>طلب تخصيص جديد</strong>, مصنع ساسكو</div>
+                      <p class="m-0 text-black-50 opacity-5">
+                        34435# | خدمة التخصيص و الترخيص
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <div class="text-start">
+                    <span class="badge rounded-pill badge-recommand"
+                      >طلب توصية</span
+                    >
+                    <p class="m-0 text-black-50 text-opacity-25 lh-1">
+                      12.10.2022
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card shadow-sm border-secondary-aqua px-3 py-3 mb-2">
+              <div class="row">
+                <div class="col-12 col-md-6">
+                  <div class="d-flex align-items-center">
+                    <div class="ms-3">
+                      <img src="../images/svg/request-icon-1.svg" />
+                    </div>
+                    <div class="lh-lg">
+                      <div><strong>طلب تخصيص جديد</strong>, مصنع ساسكو</div>
+                      <p class="m-0 text-black-50 opacity-5">
+                        34435# | خدمة التخصيص و الترخيص
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <div class="text-start">
+                    <span class="badge rounded-pill badge-new">طلب توصية</span>
+                    <p class="m-0 text-black-50 text-opacity-25 lh-1">
+                      12.10.2022
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card shadow-sm border-secondary-dark px-3 py-3 mb-2">
+              <div class="row">
+                <div class="col-12 col-md-6">
+                  <div class="d-flex align-items-center">
+                    <div class="ms-3">
+                      <img src="../images/svg/request-icon-2.svg" />
+                    </div>
+                    <div class="lh-lg">
+                      <div><strong>طلب تخصيص جديد</strong>, مصنع ساسكو</div>
+                      <p class="m-0 text-black-50 opacity-5">
+                        34435# | خدمة التخصيص و الترخيص
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <div class="text-start">
+                    <span class="badge rounded-pill badge-draft">مسودة</span>
+                    <p class="m-0 text-black-50 text-opacity-25 lh-1">
+                      12.10.2022
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card shadow-sm border-secondary-dark px-3 py-3 mb-2">
+              <div class="row">
+                <div class="col-12 col-md-6">
+                  <div class="d-flex align-items-center">
+                    <div class="ms-3">
+                      <img src="../images/svg/request-icon-2.svg" />
+                    </div>
+                    <div class="lh-lg">
+                      <div><strong>طلب تخصيص جديد</strong>, مصنع ساسكو</div>
+                      <p class="m-0 text-black-50 opacity-5">
+                        34435# | خدمة التخصيص و الترخيص
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <div class="text-start">
+                    <span class="badge rounded-pill badge-light-gray"
+                      >للتحديث</span
+                    >
+                    <p class="m-0 text-black-50 text-opacity-25 lh-1">
+                      12.10.2022
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card shadow-sm border-0 px-3 py-3 mb-2">
+              <div class="row">
+                <div class="col-12 col-md-6">
+                  <div class="d-flex align-items-center">
+                    <div class="ms-3">
+                      <img src="../images/svg/request-icon-3.svg" />
+                    </div>
+                    <div class="lh-lg">
+                      <div><strong>طلب تخصيص جديد</strong>, مصنع ساسكو</div>
+                      <p class="m-0 text-black-50 opacity-5">
+                        34435# | خدمة التخصيص و الترخيص
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <div class="text-start">
+                    <span class="badge rounded-pill badge-danger">ملغى</span>
+                    <p class="m-0 text-black-50 text-opacity-25 lh-1">
+                      12.10.2022
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </main>
   </div>

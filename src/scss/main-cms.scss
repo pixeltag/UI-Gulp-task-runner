@@ -2,8 +2,10 @@
 @import './bootstrap/_bootstrap.scss';
 @import './_fonts';
 @import './utilites';
+@import './_badge';
 @import './cms/_header.scss';
 @import './cms/_pageHead.scss';
+@import './cms/_modifiers.scss';
 
 
 body {
@@ -25,5 +27,4 @@ a {
 .main-content {
     padding-right: 81px;
     padding-left: 0;
-
 }
