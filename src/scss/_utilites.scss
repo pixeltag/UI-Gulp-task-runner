@@ -39,7 +39,14 @@
   font-size: 34px;
   padding-top: 35px;
 }
-
+.icon-rounded {
+  background-color: #dee9ee;
+  border-color: #dee9ee;
+  width: 52px;
+  height: 52px;
+  text-align: center;
+  border-radius: 50%;
+}
 .two-factor {
   width: 240px;
   margin: 0 auto;
@@ -58,6 +65,12 @@
 .border-primary-blue {
   border:0;
   border-right: 8px solid #80A6B8
+  ;
+}
+
+.border-primary-dark-blue {
+  border:0;
+  border-right: 8px solid #004D71
   ;
 }
 
@@ -144,4 +157,27 @@ label {
   @include media-breakpoint-down(sm) {
     display: none;
   }
+}
+// header titles 
+.title-type-2 {
+  text-align: right;
+  font-size: 18px;
+  font-weight: 500;
+}
+// user search
+.user-search {
+  background-color: white;
+  border-radius: 12px;
+  width: 264px;
+  height: 47px;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  padding: 0 1em;
+    input {
+      border: 0;
+      background-color: transparent;
+      height: 40px;
+    }
 }
