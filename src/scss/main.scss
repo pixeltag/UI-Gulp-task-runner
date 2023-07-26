@@ -1,21 +1,26 @@
-@import './_vars.scss';
-@import './bootstrap/_bootstrap.scss';
-@import './utilites';
-@import './_header.scss';
-@import './_footer.scss';
-@import './_fonts';
-@import './list';
-@import './_card';
-@import './_badge';
+@import "./_colors.scss";
+@import "./bootstrap/_bootstrap.scss";
+@import "./utilites";
+@import "./_header.scss";
+@import "./_footer.scss";
+@import "./_fonts";
+@import "./list";
+@import "./_card";
+@import "./_badge";
 
 body {
-    font-family: 'Noto Kufi Arabic', Verdana, Geneva, Tahoma, sans-serif;
-    background-color: #F8FAFC;
-    line-height: 3.2rem;
-    color: $primary-light;
+  font-family: "Noto Kufi Arabic", Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #f8fafc;
+  line-height: 3.2rem;
+  color: $primary-light;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: $font-bold;
-    color: $primary-color;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-bold;
+  color: $primary-color;
 }

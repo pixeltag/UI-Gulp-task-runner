@@ -1,0 +1,239 @@
+<!-- 
+  UC002 - 8.1.1.2.5 - ك   مستفيد (جهة حكومية) أرغب باستعراض تفاصيل الطلب
+  page #35
+-->
+
+@@include("./layout/head.html")
+
+<div class="container-fluid">
+  <div class="row">
+    @@include("./layout/header.html")
+
+    <main role="main" class="main-content">
+      @@include('./layout/pageHead-no-filter.html',{ "upper-nav" : "رجوع", "main-page-title" : "طلب ابلاغ عن تعدي" })
+      <div class="container">
+        <div class="alert alert-success alert-success-cms" role="alert">محال لمنظومة الطاقة</div>
+        <!-- start form with main title -->
+        <div class="card border-right-gray form-title-bg shadow-sm px-3 py-2 d-flex flex-row justify-content-between align-items-center rounded-bottom-0 border-bottom">
+          <div>
+            <h5 class="m-0">بيانات مقدم الطلب</h5>
+          </div>
+          <div>
+            <button class="btn btn-secondary btn-collapse-cms py-2">
+              <img src="../images/svg/arrow-down.svg" class="icons-xs" />
+            </button>
+          </div>
+        </div>
+        <div class="card border-0 shadow-sm mb-3 rounded-top-0 p-4">
+          <form class="row g-3" novalidate>
+            <div class="col-12 col-md-6 lh-lg">
+              <div class="form-group mb-4">
+                <label for="">اسم الشركة</label>
+                <input type="text" id="name" class="form-control bg-placeholder-gray placeholder-text-color" placeholder="يكتب هنا اسم الشركة" />
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 lh-lg">
+              <div class="form-group mb-4">
+                <label for="">رقم السجل التجاري</label>
+                <input type="text" id="name" class="form-control bg-placeholder-gray placeholder-text-color" placeholder="2456789" />
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 lh-lg">
+              <div class="form-group mb-4">
+                <label for="">البريد الالكتروني للشركة</label>
+                <input type="email" id="name" class="form-control bg-placeholder-gray placeholder-text-color" placeholder="name@domain.com" />
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 lh-lg">
+              <div class="form-group mb-4">
+                <label for="">اسم مقدم الطلب</label>
+                <input type="text" id="name" class="form-control bg-placeholder-gray placeholder-text-color" placeholder="اسم مقدم الطلب" />
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 lh-lg">
+              <div class="form-group mb-4">
+                <label for="">رقم الهوية/ الاقامة لمقدم الطلب</label>
+                <input type="text" id="name" class="form-control bg-placeholder-gray placeholder-text-color" placeholder="23534423" />
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 lh-lg">
+              <div class="form-group mb-4">
+                <label for="">رقم الجوال لمقدم الطلب</label>
+                <input type="tel" id="name" class="form-control bg-placeholder-gray placeholder-text-color" placeholder="0593455533" />
+              </div>
+            </div>
+
+            <div class="col-12 col-md-12 lh-lg">
+              <div class="form-group mb-4">
+                <label for="">البريد الالكتروني لمقدم الطلب</label>
+                <input type="email" id="name" class="form-control bg-placeholder-gray placeholder-text-color" placeholder="name@domain.com" />
+              </div>
+            </div>
+          </form>
+        </div>
+        <!-- end form with main title -->
+        <!-- start form with main title -->
+        <div class="card border-right-gray form-title-bg shadow-sm px-3 py-2 d-flex flex-row justify-content-between align-items-center rounded-bottom-0 border-bottom">
+          <div>
+            <h5 class="m-0">بيانات الطلب</h5>
+          </div>
+          <div>
+            <button class="btn btn-secondary btn-collapse-cms py-2">
+              <img src="../images/svg/arrow-down.svg" class="icons-xs" />
+            </button>
+          </div>
+        </div>
+        <div class="card border-0 shadow-sm mb-3 rounded-top-0 p-4">
+          <form class="row g-3" novalidate>
+            <div class="col-12 lh-lg">
+              <div class="form-group mb-4">
+                <label for=""> نوع التعدى </label>
+                <select id="name" class="form-select bg-placeholder-gray placeholder-text-color" required>
+                  <option>موقع قائم 1</option>
+                  <option>موقع قائم 2</option>
+                  <option>موقع قائم 3</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-12 lh-lg">
+              <div class="form-group mb-4">
+                <label for=""> المنطقة </label>
+                <select id="name" class="form-select bg-placeholder-gray placeholder-text-color" required>
+                  <option>المنطقة 1</option>
+                  <option>المنطقة 2</option>
+                  <option>المنطقة 3</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-12 lh-lg">
+              <div class="form-group mb-4">
+                <label for=""> نوع التعدى </label>
+                <select id="name" class="form-select bg-placeholder-gray placeholder-text-color" required>
+                  <option>موقع قائم 1</option>
+                  <option>موقع قائم 2</option>
+                  <option>موقع قائم 3</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 lh-lg">
+              <div class="form-group mb-4">
+                <label for="">المحافظة</label>
+                <select id="name" class="form-select bg-placeholder-gray placeholder-text-color" required>
+                  <option>الرياض 1</option>
+                  <option>الرياض 2</option>
+                  <option>الرياض 3</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 lh-lg">
+              <div class="form-group mb-4">
+                <label for="">المدينة</label>
+                <select id="name" class="form-select bg-placeholder-gray placeholder-text-color" required>
+                  <option>المدينة 1</option>
+                  <option>المدينة 2</option>
+                  <option>المدينة 3</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-12 lh-lg">
+              <div class="form-group mb-4">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3623.0220459306884!2d46.63683967426031!3d24.76043324925494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2ee3ee7da57243%3A0x62a48dc5db5b6a1f!2sTools%20%26%20Solutions!5e0!3m2!1sen!2seg!4v1688293560039!5m2!1sen!2seg" width="100%" height="600" style="border: 0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 lh-lg">
+              <div class="form-group mb-4">
+                <label for="">خط الطول</label>
+                <input type="text" id="name" class="form-control bg-placeholder-gray placeholder-text-color" placeholder="2.17403" />
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 lh-lg">
+              <div class="form-group mb-4">
+                <label for="">دائرة العرض</label>
+                <input type="text" id="name" class="form-control bg-placeholder-gray placeholder-text-color" placeholder="2.17403" />
+              </div>
+            </div>
+          </form>
+        </div>
+        <!-- end form with main title -->
+        <!-- start attachments section  -->
+        <div class="card border-right-gray form-title-bg shadow-sm px-3 py-2 d-flex flex-row justify-content-between align-items-center rounded-bottom-0 border-bottom">
+          <div>
+            <h5 class="m-0">المرفقات</h5>
+          </div>
+          <div>
+            <button class="btn btn-secondary btn-collapse-cms py-2">
+              <img src="../images/svg/arrow-down.svg" class="icons-xs" />
+            </button>
+          </div>
+        </div>
+        <div class="card border-0 shadow-sm mb-3 rounded-top-0 p-1">
+          <div class="card-blue-gray rounded d-flex justify-content-between m-3 p-3 bg-placeholder-gray">
+            <div class="d-flex align-items-center">
+              <div class="lh-lg card-title mb-0">ملف الرفع المساحي</div>
+            </div>
+            <div class="d-flex justify-content-between align-items-center">
+              <h5 class="collapse-icon d-block px-1 m-0">file.png</h5>
+              <a href="#"><img class="collapse-icon d-block px-1" src="../images/svg/eye-open.svg" class="icons-xs" /></a>
+              <a href="#"> <img class="collapse-icon d-block px-1" src="../images/svg/document-download.svg" class="icons-xs" /></a>
+            </div>
+          </div>
+
+          <div class="card-blue-gray rounded d-flex justify-content-between m-3 p-3 bg-placeholder-gray">
+            <div class="d-flex align-items-center">
+              <div class="lh-lg card-title mb-0">صورة من خريطة الاحداثيات</div>
+            </div>
+            <div class="d-flex justify-content-between align-items-center">
+              <h5 class="collapse-icon d-block px-1 m-0">file.png</h5>
+              <a href="#">
+                <img class="collapse-icon d-block px-1" src="../images/svg/eye-open.svg" class="icons-xs" />
+              </a>
+              <a href="#"> <img class="collapse-icon d-block px-1" src="../images/svg/document-download.svg" class="icons-xs" /></a>
+            </div>
+          </div>
+          <div class="card-blue-gray rounded d-flex justify-content-between m-3 p-3 bg-placeholder-gray">
+            <div class="d-flex align-items-center">
+              <div class="lh-lg card-title mb-0">صورة فوتوغرافية</div>
+            </div>
+            <div class="d-flex justify-content-between align-items-center">
+              <h5 class="collapse-icon d-block px-1 m-0">file.png</h5>
+              <a href="#">
+                <img class="collapse-icon d-block px-1" src="../images/svg/eye-open.svg" class="icons-xs" />
+              </a>
+              <a href="#"> <img class="collapse-icon d-block px-1" src="../images/svg/document-download.svg" class="icons-xs" /></a>
+            </div>
+          </div>
+          <div class="card-blue-gray rounded d-flex justify-content-between m-3 p-3 bg-placeholder-gray">
+            <div class="d-flex align-items-center">
+              <div class="lh-lg card-title mb-0">ملفات أخري داعمة</div>
+            </div>
+            <div class="d-flex justify-content-between align-items-center">
+              <h5 class="collapse-icon d-block px-1 m-0">file.png</h5>
+              <a href="#">
+                <img class="collapse-icon d-block px-1" src="../images/svg/eye-open.svg" class="icons-xs" />
+              </a>
+              <a href="#"> <img class="collapse-icon d-block px-1" src="../images/svg/document-download.svg" class="icons-xs" /></a>
+            </div>
+          </div>
+        </div>
+        <!-- end attachments section  -->
+      </div>
+
+      <div class="page-footer bg-white shadow-sm">
+        <div class="container">
+          <div class="d-flex py-4 flex-row-reverse">
+            <button class="btn btn-primary me-3 px-3">اسناد إلي المعتمد</button>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>

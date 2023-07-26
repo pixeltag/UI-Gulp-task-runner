@@ -1,37 +1,37 @@
-$primary-color: #004D71;
-$secondary-color: #C0935B;
-$secondary-aqua: #38C0F0;
+$primary-color: #004d71;
+$secondary-color: #c0935b;
+$secondary-aqua: #38c0f0;
 $palette-info: #117abe;
-$palette-danger: #F66F5B;
+$palette-danger: #f66f5b;
 $palette-success: #32ad71;
 $palette-warning: #f9b122;
 
 // design systems colors
 $colors: (
-  success-1: #00594E,
-  success-2: #007F43,
-  success-3: #29AE6F,
-  success-4: #699B95,
+  success-1: #00594e,
+  success-2: #007f43,
+  success-3: #29ae6f,
+  success-4: #699b95,
 
-  warning-1: #D77400,
-  warning-2: #F89819,
-  warning-3: #FFCE4C,
-  warning-4: #EBC69A,
+  warning-1: #d77400,
+  warning-2: #f89819,
+  warning-3: #ffce4c,
+  warning-4: #ebc69a,
 
   info-1: #004878,
-  info-2: #0078C0,
-  info-3: #2499B4,
-  info-4: #6FCEE3,
+  info-2: #0078c0,
+  info-3: #2499b4,
+  info-4: #6fcee3,
 
-  neutral-1: #0C0A0E,
+  neutral-1: #0c0a0e,
   neutral-2: #737272,
-  neutral-3: #CCCCCC,
-  neutral-4: #F5F5F5,
+  neutral-3: #cccccc,
+  neutral-4: #f5f5f5,
 
   important-1: #752525,
-  important-2: #DC4A34,
-  important-3: #F66F5B,
-  important-4: #E9BEBE,
+  important-2: #dc4a34,
+  important-3: #f66f5b,
+  important-4: #e9bebe
 );
 
 // direction variables start
@@ -91,8 +91,16 @@ $input-padding-x-lg: 1rem !default;
   }
 }
 
+$font-bold: "FF Shamel Family Sans One";
+$font-light: "FF Shamel Family Sans One Book";
 
-$font-bold: 'FF Shamel Family Sans One';
-$font-light: 'FF Shamel Family Sans One Book';
-
-$primary-color-light: #DEE9EE;
+$primary-color-light: #dee9ee;
+$primary-color-darkblue: #004d71;
+$primary-color-darkblue-10: #004d711a;
+$primary-color-darkblue-20: #004d7133;
+$primary-color-darkblue-5: #004d710d;
+// cms placeholder as in /cms/request-infringement.html => page#35
+$placeholder-bg-gray: #42535c0d;
+$placeholder-text-color: #80a6b8;
+// cms form title as in /cms/request-infringement.html => page#35
+$cms-title-bar-bg: #dfe9ee;
